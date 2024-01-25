@@ -26,7 +26,8 @@ public enum DataBaseType {
     OceanBase("oceanbase", "com.alipay.oceanbase.jdbc.Driver"),
     StarRocks("starrocks", "com.mysql.jdbc.Driver"),
     GaussDB("gaussdb", "org.opengauss.Driver"),
-    Databend("databend", "com.databend.jdbc.DatabendDriver");
+    Databend("databend", "com.databend.jdbc.DatabendDriver"),
+    Doris("doris", "com.mysql.jdbc.Driver");
 
     private String typeName;
     private String driverClassName;
@@ -71,6 +72,8 @@ public enum DataBaseType {
             case Oscar:
                 break;
             case StarRocks:
+                break;
+            case Doris:
                 break;
             case GaussDB:
                 break;
